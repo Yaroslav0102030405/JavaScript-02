@@ -51,3 +51,34 @@
 // }
 // console.log('qwwe')
 // Уменьшать и увеличивать счетсчик можно на произвольное значение
+
+// Домащнее задание 1
+// const logItems = function (array) {
+// for (let i = 0; i < array.length; i += 1 ) {
+//     console.log([i + 1] + " - " + array[i])
+// }
+// }
+
+// logItems(['Mango', 'Poly', 'Ajax', 'Lux', 'Jay', 'Kong'])
+
+// Задача 2
+// const calculateEngravingPrice = function (message, pricePerWord) {
+//     console.log(message.split(" ").length * pricePerWord)
+// }
+
+// calculateEngravingPrice('Proin sociis natoque et magnis parturient montes mus', 10)
+
+// Задача 3
+const findLongestWord = function(string) {
+    let items = string.split(" ")
+    let LongestWord = items[0]
+
+    for (const item of items) {
+        console.log(item)
+        if (item.length > LongestWord.length) {
+            LongestWord = item
+        }
+    }
+}
+
+findLongestWord('The quick brown fox jumped over the lazy dog')
