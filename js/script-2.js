@@ -69,16 +69,53 @@
 // calculateEngravingPrice('Proin sociis natoque et magnis parturient montes mus', 10)
 
 // Задача 3
-const findLongestWord = function(string) {
-    let items = string.split(" ")
-    let LongestWord = items[0]
+// const findLongestWord = function(string) {
+//     let items = string.split(" ")
+//     let LongestWord = items[0]
 
-    for (const item of items) {
-        console.log(item)
-        if (item.length > LongestWord.length) {
-            LongestWord = item
-        }
-    }
-}
+//     for (const item of items) {
+//         if (item.length > LongestWord.length) {
+//             LongestWord = item
+//         }
+//     }
+//     return LongestWord
+// }
 
-findLongestWord('The quick brown fox jumped over the lazy dog')
+// console.log(findLongestWord('The quick brown fox jumped over the lazy dog'))
+
+// console.log(findLongestWord('Google do a roll'));
+
+// console.log(findLongestWord('May the force be with you'));
+
+// Задача 4
+// const formatString = function (string) {
+//     // let maxLength = 40
+//     if (string.Length > 40) {
+//     //    string.split("") + `...`
+//     //    string.join("")
+//        console.log(string.split("..."))
+//     }
+
+//     return string
+
+// }
+
+// console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
+
+// console.log(formatString('Vestibulum facilisis, purus nec pulvinar iaculis.'));
+
+// Задача 5
+
+const checkForSpam = function(str) {
+    let message = str.toLowerCase();
+
+    return  message.includes('sale') || message.includes('spam');
+  };
+  
+  console.log(checkForSpam('Latest technology news')); // false
+  
+  console.log(checkForSpam('JavaScript weekly newsletter')); // false
+  
+  console.log(checkForSpam('Get best sale offers now!')); // true
+  
+  console.log(checkForSpam('[SPAM] How to earn fast money?')); // true
