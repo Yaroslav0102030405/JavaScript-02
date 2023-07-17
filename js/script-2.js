@@ -89,33 +89,33 @@
 
 // Задача 4
 // const formatString = function (string) {
-//     // let maxLength = 40
-//     if (string.Length > 40) {
-//     //    string.split("") + `...`
-//     //    string.join("")
-//        console.log(string.split("..."))
+//   let maxLength = 40;
+//       if (string.length > maxLength) {
+//         let items = string.split('');
+//         items.length = maxLength;
+//         string = items.join('') + `...`;
 //     }
-
-//     return string
-
+//     return string;
 // }
 
 // console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
 
 // console.log(formatString('Vestibulum facilisis, purus nec pulvinar iaculis.'));
 
+// console.log(formatString('Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.',),);
+
+
 // Задача 5
+// const checkForSpam = function(str) {
+//     let message = str.toLowerCase();
 
-const checkForSpam = function(str) {
-    let message = str.toLowerCase();
-
-    return  message.includes('sale') || message.includes('spam');
-  };
+//     return  message.includes('sale') || message.includes('spam');
+//   };
   
-  console.log(checkForSpam('Latest technology news')); // false
+//   console.log(checkForSpam('Latest technology news')); // false
   
-  console.log(checkForSpam('JavaScript weekly newsletter')); // false
+//   console.log(checkForSpam('JavaScript weekly newsletter')); // false
   
-  console.log(checkForSpam('Get best sale offers now!')); // true
+//   console.log(checkForSpam('Get best sale offers now!')); // true
   
-  console.log(checkForSpam('[SPAM] How to earn fast money?')); // true
+//   console.log(checkForSpam('[SPAM] How to earn fast money?')); // true
