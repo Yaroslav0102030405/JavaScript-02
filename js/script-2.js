@@ -292,16 +292,48 @@
 
 // console.log('total', total)
 
-let balance = 10000
-const payment = 2000
+// let balance = 10000
+// const payment = 2000
 
-if (balance >= payment) {
-    // отнимает от баланса текущую ссуму срдеств
-    balance -= payment;
+// if (balance >= payment) {
+//     // отнимает от баланса текущую ссуму срдеств
+//     balance -= payment;
 
-    console.log(`На счету осталось ${balance} кредитов`)
-} else {
-    console.log('на счету недостаточно средств для проведения операции!')
-}
+//     console.log(`На счету осталось ${balance} кредитов`)
+// } else {
+//     console.log('на счету недостаточно средств для проведения операции!')
+// }
 
-console.log('Операция завершена')
+// console.log('Операция завершена')
+
+
+// 2% - это 0.02
+// 20% - это 0.2
+// let totalSpent = 2000
+// let payment = 500
+// let discount = 0
+
+// if (totalSpent >= 100 && totalSpent < 1000) {
+//     console.log('Бронзовый партнер, скидка 2%')
+//     discount = 0.02
+// } else if (totalSpent >= 1000 && totalSpent < 5000) {
+//     console.log('Серебряный партнер, скидка 5%')
+//     discount = 0.05
+// } else if (totalSpent > 5000) {
+//     console.log('Золотой партнер, скидка 10%')
+//     discount = 0.1
+// } else {
+//     console.log('Не партнер, скидка 0%')
+// }
+
+// // Онять от суммы покупки скидку
+// // payment = payment - payment * discount;
+// payment -= payment * discount
+
+// console.log(`Оформляем заказ на сумму ${payment} со скидкой ${discount * 100}` )
+// // умножили чтобы получить 2% а не 0.02
+
+// // подсчитать общую сумму потраченных денег за весь период покупок
+// totalSpent += payment
+
+// console.log(`Общая сумма потраченного в магазине: ${totalSpent}`)
