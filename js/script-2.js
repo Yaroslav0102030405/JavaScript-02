@@ -119,3 +119,189 @@
 //   console.log(checkForSpam('Get best sale offers now!')); // true
   
 //   console.log(checkForSpam('[SPAM] How to earn fast money?')); // true
+
+// const stars = 0
+// // let price
+// let message
+
+// if (stars === 1) {
+//     message = 'Price: 20$'
+// } else if (stars === 2) {
+//     message = 'Price: 30$'
+// } else if (stars === 3) {
+//     message = 'Price: 50$'
+// } else if (stars === 4) {
+//     message = 'Price: 70$'
+// } else if (stars === 5) {
+//     message = 'Price: 120$'
+// } else {
+//     message = 'Такого количества звезд нет'
+// }
+
+// console.log(message)
+
+// const stars = 0
+// // let price
+// let message
+
+// switch (stars) {
+//     case 1: 
+//     message = 'Price: 20$'
+//     break
+
+//     case 2:
+//     message = 'Price: 30$'
+//     break
+
+//     case 3:
+//     message = 'Price: 50$'
+//     break
+
+//     case 4:
+//     message = 'Price: 70$'
+//     break
+
+//     case 5:
+//     message = 'Price: 120$'
+//     break
+
+//     default:
+//         message = 'Такого количества звезд нет'
+// }
+
+// console.log(message)
+
+// const stars = 5
+// let message
+
+// if (stars === 1 || stars === 2) {
+//     message = 'Price: 20$'
+// } else if (stars === 3 || stars === 4) {
+//     message = 'Price: 30$'
+// } else if (stars === 5) {
+//     message = 'Price: 120$'
+// } else {
+//     message = 'Такого количества звезд нет'
+// }
+
+// console.log(message)
+// Свичь сравнивает только на строгое равенство === он не умеет больше или меньше 
+// switch (stars) {
+//     case 1:
+//     case 2: 
+//     message = 'Price: 20$'
+//     break
+
+//     case 3:
+//     case 4:
+//     message = 'Price: 30$'
+//     break
+
+//     case 5:
+//     message = 'Price: 1200$'
+//     break
+
+//     default:
+//         message = 'Такого количества звезд нет'
+// }
+
+// console.log(message)
+
+// const option = 3
+// let message
+
+// switch (option) {
+//     case 1:
+//     message = 'Вы сможете забрать товар завтра с 12:00 в нашем офисе'
+//     break
+
+//     case 2:
+//     message = 'Курьер доставит заказ завтра с 9:00 до 18:00'
+//     break
+
+//     case 3:
+//     message = 'Поссылка будет отправлена сегодня'
+//     break
+
+//     default:
+//     message = 'Вам перезвонит менеджер'
+// }
+
+// console.log(message)
+
+// for (счетчик начального значения условиепрекращение цикла тут мы пишем что мы хотим увеличить или уменьшить знаяение)
+
+// увеличить счетсчик
+// for (let i = 0; i <= 10; i += 1) {
+//     console.log(i)
+// }
+
+// Карточки товаров с помощью цикла FOR https://www.youtube.com/watch?v=W1zptYZhw8k
+// умменьшить счетсчик
+// for (let i = 10; i >= 1; i -= 1) {
+//     console.log(i)
+// }
+
+// const minSalary = 500
+// const maxSalary = 5000
+// const employees = 5
+// let totalSalary = 0
+
+// for (let i = 1; i <= employees; i += 1) {
+//     // создаем случайноую зарплату
+//     const salary = Math.round(Math.random() * (maxSalary - minSalary) + minSalary)
+    
+//     console.log(`Зарплата работника номер ${i} - ${salary}`)
+
+//     // + зарплату всех работников
+//     totalSalary += salary
+
+// }
+// // Результат суммы зарплаты всех работников
+// console.log('totalSalary', totalSalary)
+
+// const min = 0
+// const max = 10
+// let total = 0
+
+// for (let i = min; i <= max; i += 1) {
+//     // console.log(i)
+
+// if (i % 2 === 0) {
+//     console.log('Четное', i)
+
+//     total += i
+// }
+// }
+// console.log('total', total)
+
+// Решение задачи сразу от плохого случая
+// const min = 0
+// const max = 10
+// let total = 0
+
+// for (let i = min; i <= max; i += 1) {
+// if (i % 2 !== 0) {
+//     // console.log('Не четное', i)
+//     continue
+// }
+// console.log('Четное', i)
+// // Запись знаения в тотал
+// total += i
+// }
+
+// console.log('total', total)
+
+let balance = 10000
+const payment = 2000
+
+if (balance >= payment) {
+    // отнимает от баланса текущую ссуму срдеств
+    balance -= payment;
+
+    console.log(`На счету осталось ${balance} кредитов`)
+} else {
+    console.log('на счету недостаточно средств для проведения операции!')
+}
+
+console.log('Операция завершена')
