@@ -104,20 +104,19 @@
 
 // console.log(formatString('Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.',),);
 
-
 // Задача 5
 // const checkForSpam = function(str) {
 //     let message = str.toLowerCase();
 
 //     return  message.includes('sale') || message.includes('spam');
 //   };
-  
+
 //   console.log(checkForSpam('Latest technology news')); // false
-  
+
 //   console.log(checkForSpam('JavaScript weekly newsletter')); // false
-  
+
 //   console.log(checkForSpam('Get best sale offers now!')); // true
-  
+
 //   console.log(checkForSpam('[SPAM] How to earn fast money?')); // true
 
 // const stars = 0
@@ -145,7 +144,7 @@
 // let message
 
 // switch (stars) {
-//     case 1: 
+//     case 1:
 //     message = 'Price: 20$'
 //     break
 
@@ -185,10 +184,10 @@
 // }
 
 // console.log(message)
-// Свичь сравнивает только на строгое равенство === он не умеет больше или меньше 
+// Свичь сравнивает только на строгое равенство === он не умеет больше или меньше
 // switch (stars) {
 //     case 1:
-//     case 2: 
+//     case 2:
 //     message = 'Price: 20$'
 //     break
 
@@ -250,7 +249,7 @@
 // for (let i = 1; i <= employees; i += 1) {
 //     // создаем случайноую зарплату
 //     const salary = Math.round(Math.random() * (maxSalary - minSalary) + minSalary)
-    
+
 //     console.log(`Зарплата работника номер ${i} - ${salary}`)
 
 //     // + зарплату всех работников
@@ -306,7 +305,6 @@
 
 // console.log('Операция завершена')
 
-
 // 2% - это 0.02
 // 20% - это 0.2
 // let totalSpent = 2000
@@ -337,3 +335,16 @@
 // totalSpent += payment
 
 // console.log(`Общая сумма потраченного в магазине: ${totalSpent}`)
+
+const array = [10, 15, 25, 40];
+let total = 0;
+
+for (let i = 0; i < array.length; i += 1) {
+  console.log(array[i]);
+
+  if (array[i] % 2 !== 0) {
+    total += array[i];
+  }
+}
+
+console.log(total);
